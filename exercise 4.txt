@@ -1,0 +1,131 @@
+Program 16
+
+arr= [19, 22, 18, 19, 16, 18, 19, 21, 24];
+(9) [19, 22, 18, 19, 16, 18, 19, 21, 24]
+h=arr.filter(e=>e==19);
+(3) [19, 19, 19]
+h.length;
+
+Program 17
+
+const ReverseString = str => [...str].reverse().join('');
+undefined
+console.log(ReverseString("Geeks for Geeks"));
+VM1385:1 skeeG rof skeeG
+
+
+Program 18
+
+str = "brainmentors";
+'brainmentors'
+var count = 0;
+undefined
+var arr=str.split("");
+undefined
+var h=arr.filter(e=>(e=='a' || e=='e' || e=='i'||e=='o'||e=='u') ? count++ : count);
+undefined
+console.log(h);
+VM97:1 (9) ['i', 'n', 'm', 'e', 'n', 't', 'o', 'r', 's']
+undefined
+console.log(count);
+VM121:1 4
+undefined
+
+
+Program 19
+
+
+
+arr= [19, 22, 18, 19, 16, 18, 19, 21, 24];
+(9) [19, 22, 18, 19, 16, 18, 19, 21, 24]
+arr.reduce((acc,e)=>acc+e,0);
+176
+
+Program 20
+
+
+var str="brainmentor";
+undefined
+var spl=str.split("");
+undefined
+var newarr = []
+for (let i = 0; i < spl.length; i++) {
+    newarr[spl.length -1 -i] = spl[i]
+}
+console.log(newarr);
+VM286:5 (11) ['r', 'o', 't', 'n', 'e', 'm', 'n', 'i', 'a', 'r', 'b']
+undefined
+
+Program 21
+
+
+arr = [1,2,3,4,5];
+(5) [1, 2, 3, 4, 5]
+arr.filter(e=>e!=3);
+(4) [1, 2, 4, 5]
+
+
+Program 22
+
+
+function findSecondLargestNumber(arr) {
+  let max = -Infinity;
+  let secondMax = -Infinity;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      secondMax = max;
+      max = arr[i];
+    } else if (arr[i] > secondMax && arr[i] < max) {
+      secondMax = arr[i];
+    }
+  }
+
+  return secondMax;
+}
+
+const numbers = [5, 10, 3, 8, 2];
+undefined
+console.log(findSecondLargestNumber(numbers));
+VM35:1 8
+
+Program 23
+
+
+function rotateArray(arr, steps) {
+  for (let i = 0; i < steps; i++) {
+    arr.unshift(arr.pop());
+  }
+  return arr;
+}
+
+const array = [1, 2, 3, 4, 5];
+const rotatedArray = rotateArray(array, 2);
+console.log(rotatedArray);
+VM631:10 (5) [4, 5, 1, 2, 3]
+
+
+
+Program 24
+
+
+
+arr1 = [2,4,1,7,4,2];
+(6) [2, 4, 1, 7, 4, 2]
+arr2 = [5,1,4,7,3,1];
+(6) [5, 1, 4, 7, 3, 1]
+let intersection = arr1.filter(x => arr2.includes(x));
+undefined
+console.log(intersection);
+VM2527:1 (4) [4, 1, 7, 4]
+
+
+
+Program 25
+
+
+arr = [1,2,5,2,5,1,6,7,7];
+(9) [1, 2, 5, 2, 5, 1, 6, 7, 7]
+arr.filter((item,
+        index) => arr.indexOf(item) === index)
+(5) [1, 2, 5, 6, 7]

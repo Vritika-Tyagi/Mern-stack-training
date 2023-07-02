@@ -1,0 +1,103 @@
+Program 1:
+
+const date = new Date();
+
+undefined
+const time = date.toLocaleTimeString();
+undefined
+console.log('Current Time is: ' + time);
+VM4228:1 Current Time is: 1:02:24 AM
+undefined
+
+
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+var day = date.getDay();
+undefined
+console.log(day)
+VM4386:1 4
+undefined
+console.log("Today is : " + daylist[day] + ".");
+VM4391:1 Today is : Thursday.
+
+Program 2:
+
+const date=new Date();
+undefined
+console.log(date.toLocaleDateString());
+VM151:1 6/28/2023
+undefined
+
+
+
+Program 3 :
+
+var l=prompt("Enter a value")
+undefined
+length=parseInt(l)
+30
+var b=prompt("Enter a value")
+undefined
+breadth=parseInt(b)
+40
+per=2*(length+breadth)
+140
+area=length*breadth
+1200
+console.log("The perimeter of rectangle and area of rectangle are : ",per,area )
+VM1364:1 The perimeter of rectangle and area of rectangle are :  140 1200
+undefined
+
+
+Program 4
+
+
+var last=str.substring(0,l-1)
+undefined
+console.log(last)
+VM3368:1 brainmentor
+
+var result=first.concat(last)
+undefined
+console.log(result)
+VM3530:1 sbrainmentor
+undefined
+
+str="brainmentors";
+'brainmentors'
+var len=str.length;
+undefined
+for(i=0; i<len; i++)
+    {
+        var char=str.charAt(len-1);
+        var rot=char+str.substring(0,len-1);
+        console.log(rot);
+        str=rot;
+    }
+VM612:5 sbrainmentor
+VM612:5 rsbrainmento
+VM612:5 orsbrainment
+VM612:5 torsbrainmen
+VM612:5 ntorsbrainme
+VM612:5 entorsbrainm
+VM612:5 mentorsbrain
+VM612:5 nmentorsbrai
+VM612:5 inmentorsbra
+VM612:5 ainmentorsbr
+VM612:5 rainmentorsb
+VM612:5 brainmentors
+'brainmentors'
+
+Program 5
+
+for (var year = 2000; year <= 2030; year++)
+    {
+    var d = new Date(year, 0, 1);
+    if ( d.getDay() === 0 )
+        console.log("1st January is being a Sunday  "+year);
+    }
+VM1937:5 1st January is being a Sunday  2006
+VM1937:5 1st January is being a Sunday  2012
+VM1937:5 1st January is being a Sunday  2017
+VM1937:5 1st January is being a Sunday  2023
+undefined
+

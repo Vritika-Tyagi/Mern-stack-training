@@ -1,0 +1,158 @@
+Program 11
+function Calc(){
+    var add = function(x,y){
+        return x + y;
+    }
+    var sub = function(x,y){
+        return x - y;
+    }
+    var  multi = function(x,y){
+        return x + y;
+    }
+    var divide = function(x,y){
+        return x - y;
+    }
+    return {add, sub, multi, divide};
+}
+undefined
+calc()[1][2,3];
+VM248:1 Uncaught ReferenceError: calc is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM248:1
+Calc()[0][10,2];
+VM287:1 Uncaught TypeError: Cannot read properties of undefined (reading '2')
+    at <anonymous>:1:10
+(anonymous) @ VM287:1
+Calc().add(10,20);
+30
+
+
+Program 12
+
+function Triangle(a,b,c)
+{
+    function checkTriangle(x,y,z)
+{
+    if (x == y && y == z)
+        console.log("Equilateral Triangle");
+    else
+        console.log("Invalid")
+}
+    checkTriangle(a,b,c);
+}
+undefined
+Triangle(1,1,1);
+VM857:6 Equilateral Triangle
+undefined
+a=prompt("Enter a value");
+'2'
+b=prompt("Enter a value");
+'2'
+c=prompt("Enter a value");
+'2'
+Triangle(a,b,c);
+VM857:6 Equilateral Triangle
+undefined
+
+
+
+Program 13
+
+function anar(str1,str2)
+{
+  function checkStringsAnagram(a, b) {
+   let len1 = a.length;
+   let len2 = b.length;
+   if(len1 != len2){
+      console.log('Invalid Input');
+   }
+   let str1 = a.split('').sort().join('');
+   let str2 = b.split('').sort().join('');
+   if(str1 === str2){
+      console.log("True");
+   } else { 
+      console.log("False");
+   }
+      
+  }
+    checkStringsAnagram(str1,str2);
+}
+anar("mary","army");
+    
+VM185:12 True
+undefined
+
+
+
+Program 14
+
+
+function salaryslip(id, name, basic_salary) {
+    function hra() {
+
+        return .30 * basic_salary;
+    }
+    function da() {
+
+        return .10 * basic_salary;
+    }
+    function ta() {
+
+        return .02 * basic_salary;
+    }
+    function gs() {
+
+        return basic_salary + hra() + da() + ta();
+    }
+    function taxdeduction() {
+
+        return (0.10 * gs());
+    }
+
+    function ns() {
+
+        return gs() - taxdeduction();
+    }
+
+    console.log("hra is:" + hra());
+    console.log("da is:" + da());
+    console.log("Ta is:" + ta());
+    console.log("gs is:" + gs());
+    console.log("taxdeduction is:" + taxdeduction());
+    console.log("ns is:" + ns());
+
+}
+var id = parseInt(prompt("Enter the id"));
+var name = prompt("Enter name");
+var basic_salary = parseInt(prompt("enter the basic salary"));
+
+console.log("Name and id is:" + name + " " + id);
+salaryslip(id, name, basic_salary);
+VM89:40 Name and id is:vritika 101
+VM89:28 hra is:120000
+VM89:29 da is:40000
+VM89:30 Ta is:8000
+VM89:31 gs is:568000
+VM89:32 taxdeduction is:56800
+VM89:33 ns is:511200
+undefined
+
+Program 15
+
+function minmax() {
+    let array = [28, 45, 69, 20, 15, 7, 98]; 
+       let min = array[0], max = array[0]; 
+       for (let i = 1; i < array.length; i++) { 
+          if (array[i] > max) 
+             max = array[i]; 
+          if (array[i] < min) 
+             min = array[i]; 
+        } 
+console.log("MAx="+max);
+console.log("Min="+min);
+}
+undefined
+minmax();
+VM214:10 MAx=98
+VM214:11 Min=7
+undefined

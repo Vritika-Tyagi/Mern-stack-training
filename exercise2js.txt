@@ -1,0 +1,101 @@
+Program 6
+
+function printSumOfEvenAndOddDigits(number) {
+  let evenSum = 0;
+  let oddSum = 0;
+  let digitPosition = 1;
+
+  while (number > 0) {
+    const digit = number % 10;
+
+    if (digitPosition % 2 === 0) {
+      evenSum += digit;
+    } else {
+      oddSum += digit;
+    }
+
+    number = Math.floor(number / 10);
+    digitPosition++;
+  }
+
+  console.log("Sum of digits in even places:", evenSum);
+  console.log("Sum of digits in odd places:", oddSum);
+}
+undefined
+printSumOfEvenAndOddDigits(123456);
+VM29:19 Sum of digits in even places: 9
+VM29:20 Sum of digits in odd places: 12
+undefined
+
+
+Program 7
+
+
+function capital_letter(str) 
+{
+    str = str.split(" ");
+
+    for (var i = 0, x = str.length; i < x; i++) {
+        str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(" ");
+}
+
+capital_letter("this course is with brainmentors");
+'This Course Is With Brainmentors'
+
+
+
+Program 8
+
+function validateNumber(input) {
+  var re = /^(\d{3})[- ]?(\d{3})[- ]?(\d{4})$/
+
+  console.log(re.test(input))
+}
+
+validateNumber('123 456 7890')
+VM2276:4 true
+undefined
+
+
+
+Program 9
+
+
+function checkmail()
+{
+    var email=prompt("Enter your email id")
+    if(email.includes("@") && email.includes(".com"))
+    {
+        console.log(true);
+    }
+    else{
+        console.log(false);
+    }
+}
+undefined
+checkmail()
+VM391:6 true
+undefined
+
+
+Program 10
+
+
+function frequency(str)
+{
+    const letters = {};
+for (let char of str) {
+    letters[char] = letters[char] + 1 || 1;
+}
+
+console.log(letters);
+}
+undefined
+const str = prompt("Enter the string");
+undefined
+frequency(str);
+VM257:8 {t: 2, h: 2, j: 1, u: 1, i: 1, …}
+undefined
